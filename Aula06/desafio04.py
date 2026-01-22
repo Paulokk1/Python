@@ -1,0 +1,10 @@
+digite = input('Digite algo: ')
+print('Se é uma string:')
+print(digite.isalpha())
+print('Se é um número:')
+print(digite.isnumeric())
+print('Se é Alphanumerico:')
+print(digite.isalnum())
+print('Se é um decimal:')
+print(digite.isdecimal())
+
