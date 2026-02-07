@@ -1,0 +1,6 @@
+nome = input('Qual o seu nome: ')
+print(nome.upper())
+print(nome.lower())
+print(len(nome.replace(" ", "")))
+palavras = nome.split()
+print(len(palavras[0]))
