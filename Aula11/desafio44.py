@@ -15,5 +15,7 @@ elif pagamento == 3:
     print('Escolhendo o método 2x no cartão o produto saíra com o valor normal')
     print('Valor final R${}'.format(produto))
 elif pagamento == 4:
-    print('Escolhendo o método 2x no cartão o produto saíra com o valor normal')
-    print('Valor final R${}'.format(produto + (produto * 20 / 100)))
+    valorT = produto + (produto * 20 / 100)
+    print('Escolhendo o método 3x ou mais no cartão o produto saíra com 20% de juros')
+    parcelas = float(input('Quantas parcelas? '))
+    print('Saíra em 10x de R${}, valor final R${}'.format(valorT / parcelas, valorT))
