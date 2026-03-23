@@ -1,10 +1,14 @@
-qauntidade = 500
-contador = 0
 soma = 0
-for n in (0, qauntidade):
+contador = 0
+quantidade = 500
+
+for n in range(0, quantidade):
     impar = contador % 2
-    if  impar == 1:
-        multiplo = impar % 3
-    elif multiplo == 0:
-        soma = contador + soma
+    if impar == 1:
+        multipl0 = contador % 3
+        if multipl0 == 0:
+            soma = contador + soma
     contador += 1
+
+
+print(soma)
