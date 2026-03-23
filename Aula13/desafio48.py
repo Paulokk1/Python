@@ -1,11 +1,10 @@
-valor = 50
-contagem = 1
+qauntidade = 500
+contador = 0
 soma = 0
-for m in range(0, valor - 1):
-    impar = contagem % 2
-    if impar == 1:
-        multi3 = contagem % 3
-    elif multi3 == 0:
-        soma = soma + contagem
-    contagem = contagem + 1
-print('Soma de todos os números ímpares divisiveis por 3: {} {}'.format(soma, contagem))
+for n in (0, qauntidade):
+    impar = contador % 2
+    if  impar == 1:
+        multiplo = impar % 3
+    elif multiplo == 0:
+        soma = contador + soma
+    contador += 1
