@@ -11,4 +11,4 @@ for n in range(0, quantidade):
     contador += 1
 
 
-print(soma)
+print('A soma de todos os valores impares multiplos de 3 é {}'.format(soma))
