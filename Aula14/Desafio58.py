@@ -11,4 +11,8 @@ while n1 != aleaT:
     n1 = int(input('Digite um número: '))
     cont += 1
     print('Errou, tente de novo!')
+    if n1 < aleaT:
+        print('Maior')
+    else:
+        print('Menor')
 print('Você acertou! Total de tentativas: {}'.format(cont))
