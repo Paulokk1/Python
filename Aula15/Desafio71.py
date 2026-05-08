@@ -1,3 +1,7 @@
+
+print("=" * 60)
+print(" " * 25, "BANCO", " " * 45)
+print("=" * 60)
 valor = int(input('Qual o valor a ser sacado? '))
 
 resto = valor
@@ -34,7 +38,8 @@ while resto >= 1:
     ce1 += 1
 
 
-print(total50, ce50)
-print(total20, ce20)
-print(total10, ce10)
-print(total1, ce1)
+print(f"São {ce50} cédulas de R$50, totalizando: R${total50}")
+print(f"São {ce20} cédulas de R$20, totalizando: R${total20}")
+print(f"São {ce10} cédulas de R$10, totalizando: R${total10}")
+print(f"São {ce1} cédulas de R$01, totalizando: R${total1}")
+print("=" * 60)f
