@@ -42,4 +42,4 @@ print(f"São {ce50} cédulas de R$50, totalizando: R${total50}")
 print(f"São {ce20} cédulas de R$20, totalizando: R${total20}")
 print(f"São {ce10} cédulas de R$10, totalizando: R${total10}")
 print(f"São {ce1} cédulas de R$01, totalizando: R${total1}")
-print("=" * 60)f
+print("=" * 60)

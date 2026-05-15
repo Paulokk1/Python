@@ -2,7 +2,7 @@ c = 1
 
 
 print('=' * 60)
-print('Números negativos param o program!')
+print('Números negativos param o programa!')
 print('=' * 60)
 while True:
     n1 = int(input('A tabuada de qual valor? '))
@@ -14,4 +14,6 @@ while True:
         
         c += 1
     c = 1
-    
+print("=" * 60)
+print("PROGRAMA ENCERRADO")
+print("=" * 60)

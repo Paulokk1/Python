@@ -1,30 +1,32 @@
-maior18 = 0
-homensrg = 0
-muie20 = 0
-c = 1
-pergunta = 'o'
-while True:
-    print(f'-------------{c}⁰pessoa----------------')
-    nome = str(input(f'Nome dá {c}⁰ pessoa: '))
-    idade = int(input(f'Qual a idade: '))
-    sexo = str(input(f'Qual o sexo: ')).upper().strip()[0]
-
-    if idade >= 18:
-        maior18 += 1
+sexo = ' '
+Idade = 0
+nome = ' '
+conidade = 0
+homens = 0
+mulheresvin = 0
+continuar = ' '
+while True:    
+    nome = str(input('NOME: '))
+    Idade = int(input('IDADE: '))
+    while sexo not in 'MF':
+        sexo = str(input('SEXO: ')).upper().strip()[0]
+    if Idade >= 18:
+        conidade += 1
     if sexo == 'M':
-        homensrg += 1
-    if idade > 18 and sexo == 'F':
-        muie20 += 1
-    c += 1
-    if c > 2:
-        while True:
-            pergunta = str(input('Quer continuar? [S/N]: ')).upper().strip()[0]
-            if pergunta == 'N':
-                break
-            if pergunta == 'S':
-                break
-    if pergunta == 'N':
+        homens += 1
+    if sexo == 'F' and Idade < 20:
+        mulheresvin += 1 
+    
+    sexo = ' '
+    while continuar not in 'SN':
+        continuar = str(input('Você quer continuar?[S/N]: ')).upper().strip()[0]
+
+    if continuar == 'N':
         break
-print(f'Pessoas com mais de 18: {maior18}')
-print(f'Homens cadastrados: {homensrg}')
-print(f'Mulheres com mais de 20 anos: {muie20}')
+    else:
+        continuar = ' '
+
+
+print(f'A quantidade de pessoas com mais de 18 é: {conidade}')
+print(f'A quantidade de homens registrados é: {homens}')
+print(f'A quantidade de mulheres com menos de 20 anos: {mulheresvin}')
